@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    container_name: flask-app
+    ports:
+      - "5007:5000"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7.0
+    container_name: redis-server
+
