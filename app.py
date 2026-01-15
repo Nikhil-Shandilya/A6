@@ -29,3 +29,17 @@ def home():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
 
+
+"""
+sudo apt update
+sudo apt install docker-compose
+sudo systemctl start docker
+docker-compose up -d --build
+docker ps
+curl http://localhost:5007
+docker-compose logs -f
+docker exec -it flask-app bash
+ls , pip list , exit
+"""
+
+
